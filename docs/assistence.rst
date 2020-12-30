@@ -29,7 +29,7 @@ de acesso (CPF e senha), para efetuar seu login.
 
 
 Em seguida, o usuário é redirecionado novamente para o SIGAA IFPA. Nesse momento, a rotina de login executa o procedimento
-descrito na sessão :ref:`Casos de Uso <casos_de_uso>`.
+descrito na sessão :hoverxref:`Casos de Uso <casos_de_uso>`.
 
 Para solicitar auxílio estudantil, o usuário precisa preencher, ou ter preenchido, o formulário de adesão ao
 cadastro único. Após logar no sistema, o usuário deverá clicar no item de menu *Aderir ao Cadastro único* na aba *Auxílios*
