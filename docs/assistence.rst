@@ -54,6 +54,66 @@ O usuário deverá ler e aceitar os termos de uso referente ao cadastro no Progr
 O usuário precisa informar suas informações de perfil antes de preencher o formulário de adesão.
 
 .. figure:: _static/img/assistence/perfil.png
+    :align: center
+
+    Formulário do perfil de adesão
+
+
+As informações submetidas pelo usuário via formulário de adesão são de fundamental importância para o Programa
+de Assistência Estudantil.
+
+.. figure:: _static/img/assistence/questionario-inicio.png
+    :align: center
+
+    Início do questionário de adesão
+
+
+.. figure:: _static/img/assistence/questionario-fim.png
+    :align: center
+
+    Final do questionário de adesão
+
+
+O usuário pode se inscrever em processos seletivos referentes a auxílios estudantis após finalizar o preenchimento
+do questionario de adesão ao Programa de Assistência Estudantil.
+
+.. figure:: _static/img/assistence/questionario-sucesso.png
+    :align: center
+
+    Questionário de adesão submetido com sucesso.
+
+
+Para se inscrever em um processo seletivo referente a auxílios estudantis, primeiramente o usuário deverá acessar
+o formulário de solicitação de bolsa.
+
+.. figure:: _static/img/assistence/solicitar-auxilio.png
+    :align: center
+
+    Solicitar auxílio
+
+
+O usuário poderá verificar quais processos seletivos estão vigentes, bem como os respectivos cronogramas de acompanhamento
+e submissão.
+
+.. figure:: _static/img/assistence/formulario-solicitacao.png
+    :align: center
+
+    Formulário de solicitação de bolsa
+
+
+O usuário preenche o formulário de requerimento com as informações necessárias e em seguida anexa os documentos
+pertinentes ao seu requerimento.
+
+.. figure:: _static/img/assistence/formulario-requerimento.png
+    :align: center
+
+    Formulário de justificativa de requerimento
+
+.. figure:: _static/img/assistence/formulario-conclusao.png
+    :align: center
+
+    Tela de conclusão de solicitação e anexo de documentação
+
 
 .. rubric:: Notas
 
