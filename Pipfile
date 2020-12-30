@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+sphinx-autobuild = "*"
+invoke = "*"
+sphinx-rtd-theme = "*"
+rstcheck = "*"
+sphinx-hoverxref = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true
