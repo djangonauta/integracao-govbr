@@ -115,6 +115,30 @@ pertinentes ao seu requerimento.
     Tela de conclusão de solicitação e anexo de documentação
 
 
+O usuário pode acompanhar sua solicitação acessando a página de acompanhamento de solicitações de auxílios
+
+.. figure:: _static/img/assistence/acompanhar-auxilio.png
+    :align: center
+
+    Acompanhamento de solicitações
+
+
+O *link* de avaliação de serviço fica disponível para o usuário acessar em função do *status* de sua solicitação.
+
+.. figure:: _static/img/assistence/link-avaliacao.png
+    :align: center
+
+    *Link* de avaliação
+
+
+O usuário avalia o serviço utilizando a API de avaliação fornecida pelo gov.br
+
+.. figure:: _static/img/assistence/avaliar-solicitacao.png
+    :align: center
+
+    Formulário de avaliação de serviços via API gov.br
+
+
 .. rubric:: Notas
 
 .. [#] Sistema Integrado de Gestão de Atividades Acadêmicas.
