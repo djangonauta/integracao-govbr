@@ -52,6 +52,21 @@ pertinentes.
     Tela intermediária
 
 
+Protocolo
+---------
+
+A versão **inicial** do número de protoloco é uma *string* com o seguinte formato:
+
+    [ano][mês][dia][hora][minuto][segundo].[código do serviço].[id do objeto na base]
+
+
+Exemplo: 20210110093540.4295.32
+
+.. note::
+    
+    Tanto o protocolo quanto o link de avaliação são adicionados ao objeto bolsa correspondente quando
+    o status desse objeto é atualizado pelos gestores do serviço de auxílio.
+
 .. rubric:: Notas
 
 .. [#] Instituto Federal de Educação, Ciência e Tecnologia do Pará.

@@ -21,21 +21,6 @@ As seguintes alterações devem ser aplicadas na tabela ``sae.bolsa_auxilio`` no
     alter table sae.bolsa_auxilio add column link_avaliacao varchar (4000);
     alter table sae.bolsa_auxilio add column protocolo_govbr varchar (255);
 
-Protocolo
-=========
-
-A versão **inicial** do número de protoloco é uma *string* com o seguinte formato:
-
-    [ano][mês][dia][hora][minuto][segundo].[código do serviço].[id do objeto na base]
-
-
-Exemplo: 20210110093540.4295.32
-
-.. note::
-    
-    Tanto o protocolo quanto o link de avaliação são adicionados ao objeto bolsa correspondente quando
-    o status desse objeto é atualizado pelos gestores do serviço de auxílio.
-
 
 JBoss
 =====
@@ -83,7 +68,7 @@ Foi necessário alterar a versão do protocolo TLS [#]_ em nossa versão da JVM 
 .. code-block:: properties
     :linenos:
 
-    -Dhttps.protocols=TLSv1.2"
+    -Dhttps.protocols=TLSv1.2
 
 
 .. |registro_app_client| raw:: html
@@ -97,9 +82,17 @@ Foi necessário alterar a versão do protocolo TLS [#]_ em nossa versão da JVM 
    <a href="https://transformacao-digital.gitbook.io/tutorial-transformacao-digital/bases-tecnologicas/api-de-avaliacao-do-gov.br"
       target="_blank">documentação oficial</a>
 
+
+Biblioteca Jose4J
+-----------------
+
+A biblioteca :download:`jose4j-0.7.2.jar <_downloads/lib/jose4j-0.7.2.jar>` deve ser adicionada em
+``$JBOSS_HOME/server/default/lib`` para que as funcionalidades relacionadas com JSON [#]_ funcionem corretamente.
+
 .. rubric:: Notas
 .. [#] Sistema Integrado de Gestão de Atividades Acadêmicas
 .. [#] Application Programming Interface
 .. [#] Transport Layer Security
 .. [#] Java Virtual Machine
 .. [#] Hyper Text Transfer Protocol Secure
+.. [#] JavaScript Object Notation
