@@ -54,10 +54,11 @@ As credenciais ``clientId`` e ``clientSecret`` são obtidas a partir do |registr
 "<client_id>:<client_secret>".
 
 .. code-block:: properties
+    :linenos:
 
-    "-DclientId=<id_do_servico>"
-    "-DclientSecret=<senha_do_servico>"
-    "-DclientHashLogin=<base64 de 'client_id:client_secret'>"
+    -DclientId=<id_do_servico>
+    -DclientSecret=<senha_do_servico>
+    -DclientHashLogin=<base64 de "client_id:client_secret">
 
 
 Credenciais de acesso para API de avaliação
@@ -68,19 +69,21 @@ As credenciais de acesso para API [#]_ de avaliação (usuário e senha) devem s
 "<usuario:senha>".
 
 .. code-block:: properties
+    :linenos:
 
-    "-DclientHashAvaliacao=<base64 de 'usuario:senha'>
+    -DclientHashAvaliacao=<base64 de "usuario:senha">
 
 
 Protocolo TLS
 -------------
 
-Foi necessário alterar a versão do protocolo TLS [#]_ em nossa versão da JVM [#]_ para que as conexões HTTPS pudessem
-ser feitas corretamente:
+Foi necessário alterar a versão do protocolo TLS [#]_ em nossa versão da JVM [#]_ para que as conexões HTTPS
+[#]_ pudessem ser feitas corretamente:
 
 .. code-block:: properties
+    :linenos:
 
-    "-Dhttps.protocols=TLSv1.2" 
+    -Dhttps.protocols=TLSv1.2"
 
 
 .. |registro_app_client| raw:: html
@@ -99,3 +102,4 @@ ser feitas corretamente:
 .. [#] Application Programming Interface
 .. [#] Transport Layer Security
 .. [#] Java Virtual Machine
+.. [#] Hyper Text Transfer Protocol Secure
