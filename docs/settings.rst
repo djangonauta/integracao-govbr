@@ -9,7 +9,7 @@ seguinte inserção deve ser executada no banco de dados ``sistemas_comum``:
     :caption: Criação do parâmetro (sistemas_comum)
     :linenos:
 
-    insert into comum.parametro (nome, descricao, valor, id_subsistema, id_sistema, codigo) values ('LOGIN_GOVBR_ATIVO', 'Parametro que define se o botão de login govbr está ativo', false, 11700, 2, 'IFPA_60_1');
+    insert into comum.parametro (nome, descricao, valor, id_subsistema, id_sistema, codigo) values ('LOGIN_GOVBR_ATIVO', 'Parametro que define se o botão de login govbr está ativo', false, 11300, 2, 'IFPA_60_1');
 
 
 As seguintes alterações devem ser aplicadas na tabela ``sae.bolsa_auxilio`` no banco de dados ``sigaa``:
