@@ -22,6 +22,46 @@ As seguintes alterações devem ser aplicadas na tabela ``sae.bolsa_auxilio`` no
     alter table sae.bolsa_auxilio add column protocolo_govbr varchar (255);
 
 
+Serviços
+========
+
+.. code-block:: sql
+    :caption: Schema do modelo de serviços
+    :linenos:
+
+    create table ifpa.servico_govbr (
+        id_servico_govbr integer not null,
+        constraint ifpa_id_servico_govbr_pk primary key (id_servico_govbr),
+
+        descricao varchar (255),
+        codigo_producao varchar (10),
+        codigo_desenvolvimento varchar (10),
+        ativo boolean
+    );
+
+    alter table ifpa.servico_govbr owner sigaa;
+
+
+Exemplo de inserção de dados com 3 serviços ativos (**Receber bolsa de Extensão**, **Receber bolsa de
+Pesquisa** e **Obter Assistência Estudantil**) para o IFPA [#]_:
+
+.. code-block:: sql
+    :caption: Inserção de serviços
+    :linenos:
+
+    insert into ifpa.servico_govbr values (1, 'Receber bolsa de Extensão - IFPA', '5919', '4097', true); -- serviço ativo
+    insert into ifpa.servico_govbr values (2, 'Participar de processo seletivo para curso de Educação Profissional Técnica (Educação de Jovens e Adultos, Integrado e Subsequente) - IFPA', '5977', '4155', false);
+    insert into ifpa.servico_govbr values (3, 'Participar de processo seletivo para curso de Educação à Distância - IFPA', '6011', '4189', false);
+    insert into ifpa.servico_govbr values (4, 'Receber bolsa de Pesquisa - IFPA', '6077', '4255', true); -- serviço ativo
+    insert into ifpa.servico_govbr values (5, 'Obter Assistência Estudantil - IFPA', '6117', '4295', true); -- serviço ativo
+    insert into ifpa.servico_govbr values (6, 'Matricular-se em curso de Educação à Distância - IFPA', '6136', '4314', false);
+    insert into ifpa.servico_govbr values (7, 'Matricular-se em curso de Educação Profissional Técnica (Educação de Jovens e Adultos, Integrado e Subsequente) - IFPA', '6300', '4478', false);
+    insert into ifpa.servico_govbr values (8, 'Participar de processo seletivo para curso de Formação Inicial e Continuada - IFPA', '6307', '4485', false);
+    insert into ifpa.servico_govbr values (9, 'Matricular-se em curso de Educação Superior de Graduação (Licenciatura, Tecnologia e Bacharelado) - IFPA', '6318', '4496', false);
+    insert into ifpa.servico_govbr values (10, 'Matricular-se em curso de Formação Inicial e Continuada - IFPA', '6538', '4716', false);
+    insert into ifpa.servico_govbr values (11, 'Participar de processo seletivo para curso de Educação Superior de Graduação (Licenciatura, Tecnologia e Bacharelado) - IFPA', '6649', '4827', false);
+
+
 JBoss
 =====
 
@@ -89,7 +129,9 @@ Biblioteca Jose4J
 A biblioteca :download:`jose4j-0.7.2.jar <_downloads/lib/jose4j-0.7.2.jar>` deve ser adicionada em
 ``$JBOSS_HOME/server/default/lib`` para que as funcionalidades relacionadas com JSON [#]_ funcionem corretamente.
 
+
 .. rubric:: Notas
+.. [#] Instituto Federal do Pará
 .. [#] Sistema Integrado de Gestão de Atividades Acadêmicas
 .. [#] Application Programming Interface
 .. [#] Transport Layer Security
