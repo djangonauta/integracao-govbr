@@ -39,7 +39,7 @@ Serviços
         ativo boolean
     );
 
-    alter table ifpa.servico_govbr owner sigaa;
+    alter table ifpa.servico_govbr owner to sigaa;
 
 
 Exemplo de inserção de dados com 3 serviços ativos (**Receber bolsa de Extensão**, **Receber bolsa de
