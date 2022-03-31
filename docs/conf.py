@@ -18,7 +18,7 @@
 # -- Project information -----------------------------------------------------
 
 project = 'Integração IFPA gov.br'
-copyright = '2020, DTI-IFPA'
+copyright = '2022, DTI-IFPA'
 author = 'DTI-IFPA'
 
 
